@@ -47,7 +47,7 @@ namespace nanoFramework.AtomMatrix
                 if (_rgbLed == null)
                 {
                     // instantiate a new Pixel controller, ATOM Matrix has 5x5 LEDs
-                    _rgbLed = new Ws2812c(_rgbLedGpio, 5, 5);
+                    //_rgbLed = new Ws2812c(_rgbLedGpio, 5, 5);
                 }
 
                 return _rgbLed;
@@ -65,7 +65,7 @@ namespace nanoFramework.AtomMatrix
             Configuration.SetPinFunction(33, DeviceFunction.SPI1_MISO);
             Configuration.SetPinFunction(23, DeviceFunction.SPI1_CLOCK);
 
-            LedMatrix.Image.Clear();
+            //LedMatrix.Image.Clear();
         }
     }
 }
